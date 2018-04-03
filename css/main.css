@@ -1,0 +1,104 @@
+
+body {
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1em;
+    max-width: 560px;
+}
+
+tbody > tr {
+    border-bottom: 1px solid #555;
+}
+
+hr.era {
+    width: 60%;
+    margin-left: 0;
+}
+
+a.disabled {
+    pointer-events: none;
+}
+
+#brand-icon {
+    max-height: 1.5em;
+}
+
+.control > a {
+    margin: 10px 10px;
+}
+
+#page-image {
+    /* margin: 5px; */
+    /* margin-right: 0; */
+    padding: 1px;
+    border: 1px solid #555;
+    border-radius: 2px;
+}
+
+.page-part {
+    text-align: left;
+    padding: 1rem;
+    /* margin: 1rem; */
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+}
+
+#page-text {
+    overflow: auto;
+    height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    #page-text {
+        overflow: auto;
+        height: 30rem;
+    }
+}
+
+#page-text > h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5em;
+    margin: 0.5em 0;
+}
+
+.row {
+    margin: auto;
+}
+
+.text-frame {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#full {
+    margin: 1em;
+    text-align: left;
+}
+
+pre{
+	background-color: #f9f9f9;
+	padding: 10px;
+	/* -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; */
+    overflow: auto;
+    /* line-height: 1em; */
+}
+
+code, pre code {
+    /* margin: 0 10px; */
+    color: #555;
+    font-size: 80%;
+}
+
+#disqus_thread {
+    /* border: 1px #555 dotted; */
+    padding: 1em;
+    /* margin-bottom: 1em; */
+}
+
+

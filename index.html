@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>佟氏宗谱</title>
+    <link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="#"> -->
+        <img id="brand-icon" class="img-fluid" src="./img/book.png" alt="Logo">
+        <!-- </a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbat-content" aria-controls="navbat-content"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbat-content">
+            <ul id="nav-wrapper" class="navbar-nav mr-auto">
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="control">
+            <a id="next" href="" class="btn btn-primary">下一页</a>
+            <a id="prev" href="" class="btn btn-secondary">上一页</a>
+            <span data-toggle="tooltip" data-placement="right" title="繁体转印成简体的时候，出现了一些形近的错别字，再转回繁体会较容易发现它们。">
+                <input id="ctcs" type="checkbox" onchange="onCtCsChange(this)"> 转为繁体
+            </span>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <img id="page-image" class="img-fluid" src="" alt="">
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="text-frame">
+                    <div id="page-text" class="page-part">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos dicta cumque aut necessitatibus, aliquam a voluptatibus quidem
+                        ipsam error qui rem, sed fuga tempore magnam consequuntur distinctio. Doloribus, animi totam!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-frame">
+        <div id="disqus_thread"></div>
+        <button id="full-toggle" type="button" class="btn btn-outline-primary btn-lg btn-block">
+            显示/隐藏 全文 （向下滚动查看）
+        </button>
+
+    </div>
+    <div class="container-fluid">
+        <div id="full" class="page-part d-none">
+        </div>
+    </div>
+
+
+    <script src="./js/jquery-3.0.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/showdown.min.js"></script>
+    <script src="./js/tw_cn.js"></script>
+    <div id="content-js"></div>
+    <script src="./js/main.js"></script>
+    <script>
+        (function () {
+            run([{
+                path: "01",
+                title: "佟氏宗谱序"
+            }, {
+                path: "02",
+                title: "佟氏别录",
+                // default : true
+            }], {
+                shortName: "tong-genealogy",
+                url: "https://windsting.github.io/genealogy/"
+            });
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</body>
+
+</html>
